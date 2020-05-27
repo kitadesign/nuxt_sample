@@ -29,18 +29,22 @@
         >
           Top
         </a>
+<!--        <el-button type="primary" icon="el-icon-search">Search</el-button>-->
       </div>
+      <search />
     </div>
   </div>
 </template>
 
 <script>
   import Logo from '~/components/Logo.vue'
+  import Search from '~/components/Search.vue'
 
   export default {
     name: 'index',
     components: {
-      Logo
+      Logo,
+      Search
     },
     data () {
       return {
