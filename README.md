@@ -1,4 +1,4 @@
-# sample2
+# Sample
 
 > My divine Nuxt.js project
 
