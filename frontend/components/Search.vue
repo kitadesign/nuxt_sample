@@ -26,7 +26,7 @@
         const input = this.$refs.textInput.value
         console.log('this.$refs.textInput', val)
         try {
-          const res = await axios.post('https://www.google.com/?search='+ input)
+          const res = await axios.post('/api?search='+ input)
           console.log('res', res)
           return true
         } catch (e) {

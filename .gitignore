@@ -83,7 +83,7 @@ typings/
 .cache
 
 # nuxt.js build output
-.nuxt
+frontend/.nuxt
 
 # Nuxt generate
 dist
@@ -124,3 +124,8 @@ sw.*
 
 # TernJS port file
 .tern-port
+
+
+backend/pkg/mod/
+
+db/
