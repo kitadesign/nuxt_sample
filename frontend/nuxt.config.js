@@ -40,7 +40,6 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/proxy'
   ],
   /*
   ** Build configuration
@@ -52,13 +51,5 @@ export default {
     extend (config, ctx) {
     },
     vendor: ['element-ui']
-  },
-  proxy: {
-    '/api': {
-      target: 'http://localhost:8080',
-      pathRewrite: {
-        '^/api' : '/'
-      }
-    }
   }
 }

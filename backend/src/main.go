@@ -1,21 +1,23 @@
 package main
 
 import (
-  "net/http"
-  "os"
+	"net/http"
+	"os"
 
-  "github.com/labstack/echo"
-  "github.com/labstack/echo/middleware"
+	"github.com/labstack/echo"
+	"github.com/labstack/echo/middleware"
 )
 
 func main() {
 	e := echo.New()
 	e.Use(middleware.Logger())
 	e.Use(middleware.Gzip())
-  e.Debug = true
-  // e.Use(middleware.Recover())
+	e.Use(middleware.CORS())
 
-  e.GET("/", TopHandler)
+	e.Debug = true
+	// e.Use(middleware.Recover())
+
+	e.POST("/", TopHandler)
 
 	port := os.Getenv("PORT")
 	if port == "" {
