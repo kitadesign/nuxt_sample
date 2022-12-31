@@ -13,7 +13,7 @@
   "dependencies": {
     "axios": "^0.21.2",
     "element-ui": "^2.13.2",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.12.2",
     "vue-axios": "^2.1.5"
   },
   "devDependencies": {}
